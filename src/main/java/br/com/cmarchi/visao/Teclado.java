@@ -1,5 +1,7 @@
 package br.com.cmarchi.visao;
 
+import br.com.cmarchi.modelo.Memoria;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -75,7 +77,7 @@ public class Teclado extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() instanceof JButton) {
             JButton botao = (JButton) e.getSource();
-            System.out.println(botao.getText());
+            Memoria.getInstancia().processarComando(botao.getText());
         }
 
     }

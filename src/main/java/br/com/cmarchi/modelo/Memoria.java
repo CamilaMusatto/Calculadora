@@ -27,7 +27,13 @@ public class Memoria {
     }
 
     public void processarComando(String valor) {
-        textoAtual += valor;
-        observadores.forEach(o -> o.valorAlterado(textoAtual));
+
+        if("AC".equals(valor)){
+            textoAtual += valor;
+        } else {
+            textoAtual += valor;
+        }
+
+        observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
     }
 }
