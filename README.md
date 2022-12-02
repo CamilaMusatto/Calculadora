@@ -12,7 +12,7 @@
 ## Demonstração da aplicação
 <p align="left">Interface gráfica da calculadora</p>
 
-![image](https://i.imgur.com/kC2ruVe.png)
+![image](https://imgur.com/tq83VmT.png)
 
 
 
